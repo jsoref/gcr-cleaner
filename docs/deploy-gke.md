@@ -90,10 +90,10 @@ spec:
             - -grace=720h # 30 days
             - -recursive
             - -tag-filter-any=.*
-            restartPolicy: Never
-            serviceAccountName: gcr-cleaner
-            nodeSelector:
-              iam.gke.io/gke-metadata-server-enabled: "true"
+          restartPolicy: Never
+          serviceAccountName: gcr-cleaner
+          nodeSelector:
+            iam.gke.io/gke-metadata-server-enabled: "true"
 ```
 
 
